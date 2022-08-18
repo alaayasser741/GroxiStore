@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap");
 .header {
   height: 100vh;
-  background: var(--back-blue) url("../../images/Home/Hero.png") center;
+  background: var(--back-blue) url("../images/Home/Hero.png") center;
+  position: relative;
+}
+.header .slice {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .header .container {
   padding: 2rem 0;
@@ -10,7 +16,7 @@
 .header .container nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header .container nav .toggle-menu {
   display: none;
@@ -87,6 +93,38 @@
   padding: 0.1rem 0.3rem;
   font-size: 0.5rem;
 }
+.header .container header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .container header .text {
+  text-align: left;
+}
+.header .container header .text span {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+.header .container header .text h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1.3rem;
+}
+.header .container header .text p {
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+.header .container header .text .btns {
+  display: flex;
+  gap: 1rem;
+}
+.header .container header .text .btns .btn:last-child {
+  background-color: var(--dark-main);
+}
 
 @media (max-width: 991px) {
   .header .container nav {
@@ -97,6 +135,12 @@
   }
 }
 @media (max-width: 768px) {
+  .header {
+    background-position: right;
+  }
+  .header .slice {
+    display: none;
+  }
   .header .container nav {
     padding: 0 2rem;
   }
@@ -115,6 +159,30 @@
   }
   .header .container nav .toggle-menu i:hover .links .icons {
     right: 0 !important;
+  }
+  .header .container header {
+    align-items: center;
+  }
+  .header .container header .text {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  .header .container header .text .btns {
+    justify-content: center;
+  }
+  .header .container header .text span {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  .header .container header .text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .header .container header .text p br {
+    display: none;
   }
 }
 /* bottom navbar */
@@ -145,6 +213,115 @@
   background: var(--dark-main);
 }
 
+/* Login Form */
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  right: -105%;
+  z-index: 1000000;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form-container form {
+  background: #fff;
+  border: var(--border);
+  width: 30rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  margin: 2rem;
+  border-radius: 0.5;
+  -webkit-border-radius: 0.5;
+  -moz-border-radius: 0.5;
+  -ms-border-radius: 0.5;
+  -o-border-radius: 0.5;
+}
+.login-form-container form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #444;
+  text-align: center;
+}
+.login-form-container form span {
+  display: block;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  text-transform: capitalize;
+}
+.login-form-container form .box-input {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.1rem;
+  border: var(--border);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-transform: none;
+}
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 0;
+  text-transform: capitalize;
+}
+.login-form-container form .checkbox label {
+  font-size: 1.1rem;
+  color: #777;
+  cursor: pointer;
+}
+.login-form-container form .Btn {
+  border: 0;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  color: #fff;
+  background: var(--main-color);
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: var(--transtiom);
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.login-form-container form .Btn:hover {
+  background: var(--dark-main);
+  color: #fff;
+}
+.login-form-container form p {
+  padding-top: 0.8rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+.login-form-container form p a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.login-form-container.active {
+  right: 0;
+}
+
+.login-form-container #close-btn-login {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 3.5rem;
+  color: #444;
+  cursor: pointer;
+}
+
 :root {
   --main-color:#9fcb22;
   --dark-main:#14462e;
@@ -153,6 +330,9 @@
   --black:#000;
   --white:#fff;
   --transtiom:0.3s;
+  --border: .1rem solid rgba(0, 0, 0, .1);
+  --border-hover: .1rem solid var(--black);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 * {
@@ -160,6 +340,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -224,4 +405,11 @@ html::-webkit-scrollbar-thumb:hover {
   .container {
     width: 1170px;
   }
+}
+.btn {
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  padding: 1rem 2.5rem;
+  font-weight: 500;
+  color: var(--white);
 }/*# sourceMappingURL=style.css.map */

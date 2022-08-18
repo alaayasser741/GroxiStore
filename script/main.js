@@ -9,3 +9,11 @@ function IconShow(){
     }
 }
 _toggleMenu.addEventListener('click',IconShow);
+let loginFrom = document.querySelector('.login-form-container');
+document.querySelector('#login-btn').onclick = () => {
+    loginFrom.classList.toggle('active');
+}
+
+document.querySelector('#close-btn-login').onclick = () => {
+    loginFrom.classList.remove('active');
+}

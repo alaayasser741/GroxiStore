@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,17 @@
     <!-- FavIcon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <!-- FontAwsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main Style -->
     <link rel="stylesheet" href="sass/style.css">
     <title>Groxi Store</title>
 </head>
+
 <body>
     <section class="header">
+        <img src="images/Home/sliceHeader.png" alt="slice" class="slice">
         <div class="container">
             <!-- Navbar -->
             <nav>
@@ -29,9 +34,9 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <div class="icons">
+                    <div class="icons" style="right: -105%;">
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#" id="login-btn"><i class="fa-solid fa-user"></i></a>
                         <a href="#"><i class="fa-solid fa-heart"></i></a>
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
                     </div>
@@ -42,6 +47,16 @@
             </nav>
             <!-- Hero -->
             <header>
+                <div class="text">
+                    <span>Welcome To Our Gerocery Store</span>
+                    <h1>Shop Online for<br> Fresh grocries</h1>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate<br>
+                        velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div class="btns">
+                        <a class="btn" href="#">SHOP NOW</a>
+                        <a class="btn" href="#">READ MORE</a>
+                    </div>
+                </div>
             </header>
         </div>
     </section>
@@ -53,7 +68,28 @@
         <a href="#blogs" class="fas fa-blog"></a>
         <a href="#Contact" class="fa-solid fa-address-book"></a>
     </nav>
+    <!-- Form Login -->
+    <div class="login-form-container">
+        <div id="close-btn-login" class="fa-solid fa-xmark"></div>
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" class="box-input" name="input-email" id="input-email" placeholder="Enter Your Email">
+            <span>password</span>
+            <input type="password" class="box-input" name="input-pass" id="input-pass" placeholder="Enter Password">
+
+            <div class="checkbox">
+                <input type="checkbox" name="input-check" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" value="sign in" class="Btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    </div>
     <!-- Main Script -->
     <script src="script/main.js"></script>
 </body>
+
 </html>

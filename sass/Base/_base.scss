@@ -16,7 +16,26 @@ h1,h2,h3,h4{
 a{
     text-decoration: none;
 }
+html::-webkit-scrollbar {
+    width: .5rem;
+}
 
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
 .container{
     /* Padding for mobile view */
     padding-left: 15px;

@@ -1,10 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap");
+.header {
+  height: 100vh;
+  background: var(--back-blue) url("../../images/Home/Hero.png") center;
+}
+.header .container {
+  padding: 2rem 0;
+}
+.header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .container nav .toggle-menu {
+  display: none;
+}
+.header .container nav .toggle-menu i {
+  color: var(--dark-main);
+  font-size: 1.3rem;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+  transition: var(--transtiom);
+}
+.header .container nav .toggle-menu i:hover {
+  color: var(--dark-main);
+  background-color: #ddd;
+}
+.header .container nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.header .container nav .links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.header .container nav .links ul li {
+  position: relative;
+}
+.header .container nav .links ul li a {
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--black);
+}
+.header .container nav .links ul li::before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 0%;
+  height: 2px;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--transtiom);
+}
+.header .container nav .links ul li:hover::before {
+  width: 100%;
+}
+.header .container nav .links .icons a {
+  margin: 0 0.3rem;
+}
+.header .container nav .links .icons a i {
+  color: var(--main-color);
+  background-color: var(--white);
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: var(--transtiom);
+}
+.header .container nav .links .icons a i:hover {
+  color: var(--dark-main);
+  background-color: #ddd;
+}
+.header .container nav .links .icons a:last-child {
+  position: relative;
+}
+.header .container nav .links .icons a:last-child span {
+  position: absolute;
+  right: 0;
+  background-color: var(--dark-main);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .header .container nav {
+    justify-content: space-between;
+  }
+  .header .container nav .links ul {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header .container nav {
+    padding: 0 2rem;
+  }
+  .header .container nav .links .icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -105%;
+    top: 50%;
+    gap: 0.6rem;
+    transform: translateY(-50%);
+    transition: var(--transtiom);
+  }
+  .header .container nav .toggle-menu {
+    display: unset !important;
+  }
+  .header .container nav .toggle-menu i:hover .links .icons {
+    right: 0 !important;
+  }
+}
+/* bottom navbar */
+.bottom-navbar {
+  text-align: center;
+  background: var(--main-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-navbar {
+    display: block;
+  }
+}
+.bottom-navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.bottom-navbar a:hover {
+  background: var(--dark-main);
+}
+
 :root {
   --main-color:#9fcb22;
   --dark-main:#14462e;
   --back-blue:#eef7fc;
   --red:#d9485b;
+  --black:#000;
+  --white:#fff;
   --transtiom:0.3s;
 }
 
@@ -29,6 +176,27 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #666;
 }
 
 .container {

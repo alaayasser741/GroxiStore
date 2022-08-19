@@ -1,22 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     transition: all .2s linear;
 }
-html{
-    scroll-behavior:smooth ;
+
+html {
+    scroll-behavior: smooth;
 }
-body{
-    font-family: 'Barlow', sans-serif;//header Font
+
+body {
+    font-family: 'Barlow', sans-serif; //header Font
 }
-h1,h2,h3,h4{
-    font-family: 'Jost', sans-serif;//For Bold Text
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Jost', sans-serif; //For Bold Text
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 html::-webkit-scrollbar {
     width: .5rem;
 }
@@ -37,7 +45,8 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background: #666;
 }
-.container{
+
+.container {
     /* Padding for mobile view */
     padding-left: 15px;
     padding-right: 15px;
@@ -47,28 +56,46 @@ html::-webkit-scrollbar-thumb:hover {
 
 /* Small */
 @media (min-width:768px) {
-    .container{
+    .container {
         width: 750px;
     }
 }
 
- /* Medium */
+/* Medium */
 @media (min-width:992px) {
-    .container{
+    .container {
         width: 950px;
     }
 }
 
 /* Large */
 @media (min-width:1200px) {
-    .container{
+    .container {
         width: 1170px;
     }
 }
-.btn{
+
+.btn {
     text-transform: uppercase;
     background-color: var(--main-color);
     padding: 1rem 2.5rem;
     font-weight: 500;
     color: var(--white);
+}
+
+.main-title {
+    text-transform: capitalize;
+    text-align: center;
+
+    span {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
 }

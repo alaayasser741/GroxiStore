@@ -667,6 +667,14 @@
     width: 97%;
   }
 }
+.sponsor {
+  margin-bottom: 9rem;
+}
+.sponsor .container img {
+  display: block;
+  width: 100%;
+}
+
 :root {
   --main-color:#9fcb22;
   --dark-main:#14462e;

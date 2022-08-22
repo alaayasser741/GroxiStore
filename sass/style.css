@@ -1043,7 +1043,7 @@ footer .footer .container .col-1 span {
 }
 
 .aboutheader {
-  background: #F6FAFB url("../../images/About/hero.png") center no-repeat;
+  background: #F6FAFB url("../images/About/hero.png") center no-repeat;
   height: 60vh;
   margin-bottom: 9rem;
 }

@@ -1119,7 +1119,7 @@ footer .footer .container .col-1 span {
     text-align: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .aboutheader .main-title {
     width: 97%;
   }

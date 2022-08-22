@@ -77,6 +77,8 @@
                 }
 
                 .icons {
+                    z-index: 9999;
+
                     a {
                         margin: 0 .3rem;
 
@@ -86,7 +88,7 @@
                             padding: .8rem;
                             border-radius: 50%;
                             transition: var(--transtiom);
-
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                             &:hover {
                                 color: var(--dark-main);
                                 background-color: #ddd;

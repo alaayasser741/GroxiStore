@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Groxi Store || Product Details</title>
+</head>
+
+<body>
+    <section class="header aboutheader">
+        <img src="images/Home/sliceHeader.png" alt="slice" class="slice">
+        <div class="container">
+            <!-- Navbar -->
+            <nav>
+                <a href="index.html">
+                    <img src="images/Home/Logo.png" class="pinterestImg" alt="logo">
+                </a>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="icons" style="right: -105%;">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" id="login-btn"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
+                    </div>
+                </div>
+                <div class="toggle-menu">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </nav>
+            <!-- Hero -->
+            <div class="main-title">
+                <span><a href="index.html">Home</a> &rarr; <a href="#">Product Details</a></span>
+                <h2>Product Details</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Bottom Navbar -->
+    <nav class="bottom-navbar">
+        <a href="index.html" class="fas fa-home"></a>
+        <a href="about.html" class="fa-solid fa-info"></a>
+        <a href="shop.html" class="fa-solid fa-shop"></a>
+        <a href="#Pages" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+        <a href="#Contact" class="fa-solid fa-address-book"></a>
+    </nav>
+    <!-- Form Login -->
+    <div class="login-form-container">
+        <div id="close-btn-login" class="fa-solid fa-xmark"></div>
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" class="box-input" name="input-email" id="input-email" placeholder="Enter Your Email">
+            <span>password</span>
+            <input type="password" class="box-input" name="input-pass" id="input-pass" placeholder="Enter Password">
+
+            <div class="checkbox">
+                <input type="checkbox" name="input-check" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" value="sign in" class="Btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    </div>
+    <!-- Product Detail-->
+    <div class="detail">
+        <div class="container">
+            <div class="images">
+                <div class="miniImg">
+                    <div class="img"><img src="images/ProductDetail/Strawberries-1.png" alt="product">
+                    </div>
+                    <div class="img"><img src="images/ProductDetail/Strawberries-2.png" alt="product">
+                    </div>
+                    <div class="img"><img src="images/ProductDetail/Strawberries-3.png" alt="product">
+                    </div>
+                    <div class="img"><img src="images/ProductDetail/Strawberries-4.png" alt="product">
+                    </div>
+                    <div class="img"><img src="images/ProductDetail/Strawberries-5.png" alt="product">
+                    </div>
+                </div>
+                <div class="bigImg">
+                    <img src="images/ProductDetail/Strawberries-1.png" alt="Product">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Fresh Strawberries</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p><del>$30 </del> $20</p>
+                <div class="num">
+                    <div class="wrapper">
+                        <span class="minus">-</span>
+                        <span class="numb">01</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+                <div class="overview">
+                    <h3>Overview:</h3>
+                    <p>Neque porro quisquam est aui dolorem iesum ruia do
+                        sit amet, consectetur, adipisci velit, sed quia non num
+                        eius modi tempora incidunt ut labore et dolore magna
+                        volutatem exercitationem ullam.</p>
+                </div>
+                <div class="share">
+                    <h3>Share:</h3>
+                    <a href="#" target="-blank" class="btn-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="-blank" class="btn-twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="-blank" class="btn-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="-blank" class="btn-pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" target="-blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="featureProd">
+                    <div class="box">
+                        <img src="images/Home/QualityProducts.png" alt="QualityProducts">
+                        <h4>100%<br>Guarantee</h4>
+                    </div>
+                    <div class="box">
+                        <img src="images/Home/24Service.png" alt="24Service">
+                        <h4>24/7<br>Service</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Description -->
+    <div class="discrip">
+        <div class="container">
+            <ul class="discList">
+                <li class="active"id="description"><h4>Description</h4></li>
+                <li id="additonal"><h4>Additional Information</h4></li>
+                <li id="reviews"><h4>Reviews</h4></li>
+            </ul>
+            <p class="f1">Ratione volurtatem serui nesciunt neaue porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet,
+                consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                Ut
+                enim ad minima
+                veniam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+            <p class="f2">Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                ratione voluptatem sequi nesciunt
+                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                numquam
+                eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+    </div>
+    <!-- Testimonial -->
+    <div class="testimonial">
+        <div class="container">
+            <div class="main-title">
+                <span>Testimonial</span>
+                <h2>What our customers saying</h2>
+            </div>
+            <div class="contentt">
+                <div class="box">
+                    <i class="fa-solid fa-quote-left quot"></i>
+                    <p>”Quisquam est, qui dolorem ipsum quia dolor sit
+                        consectetur adipisci velit sed quia non numqua
+                        eius modi tempora incidunt ut labore et dolore
+                        magnam aliquam quaerat voluptatem repudia
+                        sint et molestiae”</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Alina Parker <span> Ceo, GTD</span></h3>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-quote-left quot"></i>
+                    <p>”Exercitationem ullam corporis suscipit laborio
+                        nisi ut aliquid ex ea commodi consequatur uis
+                        autem vel eum iure reprehenderit qui in ea vou
+                        velit esse quam nihil molestiae consequatur,
+                        vel illum qui dolorem eum fugiat”</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Kevin Andrew <span> Manager,Rex</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .sponser -->
+    <div class="sponsor">
+        <div class="container">
+            <img src="images/Home/Logo's.png" alt="sponser">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="box">
+                <div class="sup">
+                    <img src="images/Home/Basket-2.png" alt="Basket">
+                    <div class="info">
+                        <h2>Subscribe To Newsletter</h2>
+                        <form>
+                            <input type="email" placeholder="Enter Your Email Address" id="email">
+                            <input type="submit" value="SUBSCRIBE NOW">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="col col-1">
+                    <h4>Store Location</h4>
+                    <span class="bold">Address:</span>
+                    <span>121 King Street Melbourne,3000,<br>
+                        Australia</span>
+                    <span class="bold">Email:</span>
+                    <span>info@groxistore.com</span>
+                    <span class="bold">Phone:</span>
+                    <span>+1 23 45 6789</span>
+                </div>
+                <div class="col">
+                    <h4>Usefull Links</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Check out</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Fruits & Vegetable</a></li>
+                        <li><a href="#">Dairy Products</a></li>
+                        <li><a href="#">Package Foods</a></li>
+                        <li><a href="#">Beverage</a></li>
+                        <li><a href="#">Health & Wellness</a></li>
+                        <li><a href="#">Meat Varieties</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><a href="#" class="bold">Monday - Saturday</a></li>
+                        <li><a href="#">12.00 - 14.45</a></li>
+                        <li><a href="#" class="bold">Sunday - Thursday</a></li>
+                        <li><a href="#">17.30 - 00.00</a></li>
+                        <li><a href="#" class="bold">Friday - Saturday</a></li>
+                        <li><a href="#">17.30 - 00.00</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Main Script -->
+    <!-- Swiper JS -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>

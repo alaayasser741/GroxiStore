@@ -542,6 +542,32 @@
     </footer>
     <!-- Main Script -->
     <script src="script/main.js"></script>
+    <script>
+        // List Style
+        let list = document.querySelectorAll(".list");
+        let list1 = document.querySelector(".list-1");
+        let list2 = document.querySelector(".list-2");
+
+        let container = document.querySelector(".products div");
+        list.forEach((li) => {
+            li.addEventListener("click", ActiveContorl);
+        });
+
+        function ActiveContorl() {
+            list.forEach((li) => {
+                li.classList.remove("active");
+                this.classList.add("active");
+            });
+        }
+        list1.addEventListener("click", () => {
+            container.classList.remove("rowProducts");
+            container.classList.add("content");
+        });
+        list2.addEventListener("click", () => {
+            container.classList.remove("content");
+            container.classList.add("rowProducts");
+        });
+    </script>
 </body>
 
 </html>

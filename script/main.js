@@ -8,11 +8,13 @@ function IconShow() {
     _icons.style.right = "-105%";
   }
 }
-_toggleMenu.addEventListener("click", IconShow);
-let loginFrom = document.querySelector(".login-form-container");
-document.querySelector("#login-btn").onclick = () => {
-  loginFrom.classList.toggle("active");
-};
+
+  _toggleMenu.addEventListener("click", IconShow);
+  let loginFrom = document.querySelector(".login-form-container");
+  document.querySelector("#login-btn").onclick = () => {
+    loginFrom.classList.toggle("active");
+  };
+
 
 document.querySelector("#close-btn-login").onclick = () => {
   loginFrom.classList.remove("active");
@@ -142,30 +144,35 @@ function share() {
     "Hi everyone, I had a pleasant experience with this site and I share with you this masterpiece 🤍❤️"
   );
   let postImg = encodeURI(pinterestImg.src);
-  if(facebookBtn){
-  facebookBtn.setAttribute(
-    "href",
-    `https://www.facebook.com/sharer.php?u=${PostUrl}`
-  );}
-  if(twitterBtn){
-  twitterBtn.setAttribute(
-    "href",
-    `https://twitter.com/share?url=${PostUrl}&text=${postTitle}`
-  );}
-  if(linkedinBtn){
-  linkedinBtn.setAttribute(
-    "href",
-    `https://www.linkedin.com/shareArticle?url=${PostUrl}&title=${postTitle}`
-  );}
-  if(pinterestBtn){
-  pinterestBtn.setAttribute(
-    "href",
-    `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${PostUrl}&description=${postTitle}`
-  );}
-  if(whatsappBtn){
-  whatsappBtn.setAttribute(
-    "href",
-    `https://api.whatsapp.com/send?text=${postTitle} ${PostUrl}`
-  );}
+  if (facebookBtn) {
+    facebookBtn.setAttribute(
+      "href",
+      `https://www.facebook.com/sharer.php?u=${PostUrl}`
+    );
+  }
+  if (twitterBtn) {
+    twitterBtn.setAttribute(
+      "href",
+      `https://twitter.com/share?url=${PostUrl}&text=${postTitle}`
+    );
+  }
+  if (linkedinBtn) {
+    linkedinBtn.setAttribute(
+      "href",
+      `https://www.linkedin.com/shareArticle?url=${PostUrl}&title=${postTitle}`
+    );
+  }
+  if (pinterestBtn) {
+    pinterestBtn.setAttribute(
+      "href",
+      `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${PostUrl}&description=${postTitle}`
+    );
+  }
+  if (whatsappBtn) {
+    whatsappBtn.setAttribute(
+      "href",
+      `https://api.whatsapp.com/send?text=${postTitle} ${PostUrl}`
+    );
+  }
 }
 share();

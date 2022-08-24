@@ -559,14 +559,18 @@
                 this.classList.add("active");
             });
         }
-        list1.addEventListener("click", () => {
-            container.classList.remove("rowProducts");
-            container.classList.add("content");
-        });
-        list2.addEventListener("click", () => {
-            container.classList.remove("content");
-            container.classList.add("rowProducts");
-        });
+        if (list1) {
+            list1.addEventListener("click", () => {
+                container.classList.remove("rowProducts");
+                container.classList.add("content");
+            });
+        }
+        if (list2) {
+            list2.addEventListener("click", () => {
+                container.classList.remove("content");
+                container.classList.add("rowProducts");
+            });
+        }
     </script>
 </body>
 

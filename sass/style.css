@@ -1758,4 +1758,195 @@ footer .footer .container .col-1 span {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1rem;
+}
+
+.contentt {
+  margin-bottom: 9rem;
+}
+.contentt .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+.contentt .container .bar-filter {
+  text-align: right;
+  display: none;
+  margin-bottom: 1rem;
+}
+.contentt .container .bar-filter i {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.contentt .container .bar-filter i:active {
+  color: var(--main-color);
+  background-color: #e7e5e5;
+  padding: 1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.contentt .container .posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contentt .container .posts .box {
+  width: 396px;
+  background-color: #f1f2f2;
+  margin: 0 auto;
+}
+.contentt .container .posts .box .img {
+  width: 100%;
+  overflow: hidden;
+}
+.contentt .container .posts .box .img img {
+  width: 100%;
+}
+.contentt .container .posts .box .img:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.contentt .container .posts .box .text {
+  padding: 2rem 2rem 4rem;
+}
+.contentt .container .posts .box .text span {
+  font-size: 1rem;
+  color: #6c6c6c;
+  margin-bottom: 1rem;
+  display: block;
+}
+.contentt .container .posts .box .text span a {
+  font-weight: 500;
+  color: var(--main-color);
+}
+.contentt .container .posts .box .text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contentt .container .posts .box .text p {
+  color: #6c6c6c;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+.contentt .container .posts .box .text .btn {
+  background-color: var(--dark-main);
+}
+.contentt .container .posts .box .text .btn:hover {
+  background-color: var(--main-color);
+}
+.contentt .container .side-bar .close {
+  text-align: right;
+  display: none;
+}
+.contentt .container .side-bar .close i {
+  font-size: 2rem;
+}
+.contentt .container .side-bar .close i:active {
+  color: red;
+}
+.contentt .container .side-bar form {
+  margin-bottom: 2rem;
+}
+.contentt .container .side-bar form input {
+  outline: 0;
+  border: 0;
+  background-color: var(--back-blue);
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.contentt .container .side-bar .boxes {
+  border: 1px solid #e7e5e5;
+  padding: 2rem 2rem 3rem;
+  margin-bottom: 3rem;
+}
+.contentt .container .side-bar .boxes h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contentt .container .side-bar .boxes .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contentt .container .side-bar .boxes .box h4 {
+  font-size: 1rem;
+}
+.contentt .container .side-bar .boxes .box h4 a {
+  color: var(--black);
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+}
+.contentt .container .side-bar .boxes .box h4 a:hover {
+  color: var(--main-color);
+}
+.contentt .container .side-bar .boxes .box span {
+  font-size: 0.875rem;
+}
+.contentt .container .side-bar .boxes .box:hover {
+  margin-left: 0.2rem;
+}
+.contentt .container .side-bar .boxes a {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.contentt .container .side-bar .boxes a:hover {
+  margin-left: 0.5rem;
+}
+.contentt .container .side-bar .boxes-2 span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--main-color);
+}
+.contentt .container .side-bar .boxes-2 span a {
+  color: #6c6c6c;
+  padding-left: 0.5rem;
+}
+.contentt .container .side-bar .boxes-2 span a:hover {
+  margin-left: 0;
+  color: var(--main-color);
+}
+.contentt .container .side-bar .boxes-2 span:hover {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 786px) {
+  .contentt .container {
+    display: block;
+  }
+  .contentt .container .bar-filter {
+    display: block;
+  }
+  .contentt .container .posts {
+    display: block;
+  }
+  .contentt .container .posts .box {
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+  .contentt .container .side-bar {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--white);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    padding: 2rem;
+    z-index: 99999;
+    display: none;
+  }
+  .contentt .container .side-bar .close {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -80,7 +80,6 @@ let revBtn = document.getElementById("reviews");
 let f1 = document.querySelector(".f1");
 let f2 = document.querySelector(".f2");
 discList.forEach((li) => {
-  console.log("first");
   li.addEventListener("click", removeActiveDescripton);
 });
 function removeActiveDescripton() {

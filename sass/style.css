@@ -1949,4 +1949,144 @@ footer .footer .container .col-1 span {
   .contentt .container .side-bar .close {
     display: block;
   }
+}
+.form {
+  margin-bottom: 9rem;
+}
+.form .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .container .card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--back-blue);
+  justify-content: center;
+  align-items: center;
+}
+.form .container .card form {
+  background-color: var(--back-blue);
+  margin-right: 2rem;
+  padding: 3rem 2rem;
+}
+.form .container .card form h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.form .container .card form .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form .container .card form .info input {
+  outline: 0;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.form .container .card form textarea {
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 1rem;
+}
+.form .container .card form textarea::-webkit-scrollbar {
+  display: none;
+}
+.form .container .card form .btn {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.form .container .card form .btn:hover {
+  background-color: var(--dark-main);
+}
+.form .container .card .reachUs {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 3rem 4rem 3rem 3rem;
+}
+.form .container .card .reachUs h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.form .container .card .reachUs p {
+  font-weight: 200;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.form .container .card .reachUs .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.form .container .card .reachUs .box i {
+  font-size: 3rem;
+}
+.form .container .card .reachUs .box .text {
+  margin-left: 1rem;
+}
+.form .container .card .reachUs .box .text h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.form .container .card .reachUs .box .text span {
+  color: #e9ebeb;
+  font-size: 1.2rem;
+  display: block;
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .form .container .card {
+    grid-template-columns: 1fr;
+  }
+  .form .container .card form {
+    margin-right: 0;
+  }
+}
+@media (max-width: 786px) {
+  .form .container .card {
+    width: 95%;
+  }
+  .form .container .card form .info {
+    grid-template-columns: 1fr;
+  }
+  .form .container .card .reachUs {
+    width: 100%;
+    text-align: center;
+  }
+  .form .container .card .reachUs p {
+    margin-bottom: 3rem;
+  }
+  .form .container .card .reachUs .box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 0;
+  }
+  .form .container .card .reachUs .box .text {
+    margin-left: 0;
+  }
+}
+.map {
+  margin-bottom: 9rem;
+  height: 600px;
+  width: 100%;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */
